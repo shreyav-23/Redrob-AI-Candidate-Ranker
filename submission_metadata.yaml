@@ -1,0 +1,83 @@
+# ============================================================================
+# Team identity
+# ============================================================================
+
+team_name: "P for Positive"
+
+primary_contact:
+  name: "Shreya Vishwakarma"
+  email: "vishwakarmashreya237@gmail.com"
+  phone: "+91-8237008442"
+
+team_members:
+  - name: "Aish Vishwakarma"
+    email: "aishvishwakarma911@gmail.com"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+
+github_repo: "https://github.com/shreyav-23/Redrob-AI-Candidate-Ranker"
+
+sandbox_link: "https://colab.research.google.com/drive/1-a_cF5uMJv5VLE_WrJVC_2pqS54VSm6H?usp=sharing"
+
+reproduce_command: >
+  Open Redrob_AI_Ranker.ipynb in Google Colab, upload
+  candidates.jsonl and job_description.docx, then run all cells.
+  The notebook generates outputs/P_for_Positive.csv.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+
+compute:
+  platform: "Google Colab Free"
+  cpu_cores: 2
+  ram_gb: 12
+  python_version: "3.11"
+  os: "Ubuntu Linux"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  ChatGPT was used as a development assistant for brainstorming,
+  debugging Python code, refining the ranking pipeline,
+  improving documentation, and reviewing the implementation.
+  All engineering decisions, implementation, testing, and
+  final submission were completed by the participant.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+
+methodology_summary: |
+  This project implements a two-stage AI candidate ranking pipeline.
+  Candidate profiles are first scored using structured features,
+  including technical skills, current role, years of experience,
+  production AI indicators, and behavioral signals to efficiently
+  retrieve the most relevant candidates from a large candidate pool.
+  The shortlisted candidates are then re-ranked using semantic
+  similarity computed with the BAAI/bge-small-en-v1.5 Sentence
+  Transformer model. The final score combines feature-based
+  retrieval with semantic relevance to generate an explainable
+  top-100 ranked shortlist.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
