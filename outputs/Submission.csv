@@ -1,0 +1,101 @@
+Candidate_id,Rank,Score,Reasoning
+CAND_0039754,1,0.9441,Senior Applied Scientist with 16.2 yrs experience; experience exceeds the preferred range but closely aligns with the role.
+CAND_0030953,2,0.9146,Search Engineer with 7.8 yrs experience.
+CAND_0046064,3,0.9023,Senior NLP Engineer with 8.9 yrs experience.
+CAND_0079387,4,0.8857,AI Engineer with 6.9 yrs experience.
+CAND_0083307,5,0.8841,Search Engineer with 7.8 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0007009,6,0.8776,Recommendation Systems Engineer with 7.9 yrs experience.
+CAND_0044855,7,0.8483,Senior Data Scientist with 6.6 yrs experience.
+CAND_0077337,8,0.8472,Staff Machine Learning Engineer with 7.0 yrs experience.
+CAND_0055992,9,0.8452,AI Engineer with 16.9 yrs experience; experience exceeds the preferred range but closely aligns with the role.
+CAND_0041611,10,0.8366,Staff Machine Learning Engineer with 6.4 yrs experience.
+CAND_0092278,11,0.8209,Senior NLP Engineer with 6.8 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0086022,12,0.8177,Senior Applied Scientist with 5.3 yrs experience.
+CAND_0033861,13,0.8159,Senior NLP Engineer with 8.0 yrs experience.
+CAND_0005649,14,0.8146,Senior Data Scientist with 7.4 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0069905,15,0.8079,Applied ML Engineer with 6.6 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0091534,16,0.8058,AI Engineer with 16.6 yrs experience; experience exceeds the preferred range but closely aligns with the role.
+CAND_0055905,17,0.7982,Senior Machine Learning Engineer with 8.1 yrs experience.
+CAND_0096172,18,0.7945,NLP Engineer with 5.2 yrs experience.
+CAND_0028793,19,0.7912,Search Engineer with 7.2 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0018499,20,0.7855,Senior Machine Learning Engineer with 7.2 yrs experience.
+CAND_0008425,21,0.7741,Senior NLP Engineer with 7.8 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0020877,22,0.7721,Applied ML Engineer with 5.1 yrs experience.
+CAND_0044883,23,0.7711,AI Engineer with 6.3 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0071974,24,0.7641,Senior AI Engineer with 7.8 yrs experience.
+CAND_0051292,25,0.7582,Applied ML Engineer with 5.2 yrs experience.
+CAND_0054123,26,0.7517,Applied ML Engineer with 4.7 yrs experience; slightly below the preferred experience range.
+CAND_0046525,27,0.7504,Senior Machine Learning Engineer with 6.1 yrs experience.
+CAND_0044222,28,0.7493,AI Engineer with 7.7 yrs experience.
+CAND_0093547,29,0.7451,Senior Machine Learning Engineer with 2.9 yrs experience; slightly below the preferred experience range.
+CAND_0005260,30,0.7429,Senior NLP Engineer with 5.2 yrs experience.
+CAND_0081846,31,0.7373,Lead AI Engineer with 6.7 yrs experience.
+CAND_0086151,32,0.726,Recommendation Systems Engineer with 7.7 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0011687,33,0.7228,Senior NLP Engineer with 7.8 yrs experience.
+CAND_0079064,34,0.7212,Senior Data Scientist with 5.2 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0041669,35,0.7178,Recommendation Systems Engineer with 8.0 yrs experience.
+CAND_0081686,36,0.7171,Search Engineer with 6.0 yrs experience.
+CAND_0040887,37,0.7161,Machine Learning Engineer with 4.7 yrs experience; slightly below the preferred experience range.
+CAND_0088025,38,0.7084,Staff Machine Learning Engineer with 8.6 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0026532,39,0.7065,Recommendation Systems Engineer with 4.8 yrs experience; 90-day notice period offset by strong technical alignment; slightly below the preferred experience range.
+CAND_0001610,40,0.7028,Machine Learning Engineer with 3.0 yrs experience; 90-day notice period offset by strong technical alignment; slightly below the preferred experience range.
+CAND_0061265,41,0.6974,Recommendation Systems Engineer with 6.6 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0027691,42,0.6953,NLP Engineer with 6.5 yrs experience.
+CAND_0029367,43,0.6925,Senior Data Scientist with 5.7 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0057563,44,0.689,NLP Engineer with 6.8 yrs experience.
+CAND_0053695,45,0.6818,Recommendation Systems Engineer with 5.8 yrs experience.
+CAND_0076904,46,0.6814,Senior Data Scientist with 4.2 yrs experience; 90-day notice period offset by strong technical alignment; slightly below the preferred experience range.
+CAND_0062247,47,0.6779,AI Engineer with 7.3 yrs experience.
+CAND_0042506,48,0.6763,Search Engineer with 4.2 yrs experience; slightly below the preferred experience range.
+CAND_0002025,49,0.6751,Senior AI Engineer with 5.9 yrs experience.
+CAND_0094056,50,0.673,NLP Engineer with 5.9 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0050454,51,0.671,AI Engineer with 6.8 yrs experience.
+CAND_0070398,52,0.6688,Machine Learning Engineer with 7.2 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0075249,53,0.668,Applied ML Engineer with 6.2 yrs experience.
+CAND_0027801,54,0.6663,NLP Engineer with 7.4 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0077285,55,0.6657,Recommendation Systems Engineer with 5.5 yrs experience.
+CAND_0043228,56,0.6611,Applied ML Engineer with 6.8 yrs experience.
+CAND_0013613,57,0.6587,Machine Learning Engineer with 4.7 yrs experience; slightly below the preferred experience range.
+CAND_0018722,58,0.6581,Recommendation Systems Engineer with 6.6 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0075574,59,0.6564,Machine Learning Engineer with 5.7 yrs experience.
+CAND_0054394,60,0.655,Recommendation Systems Engineer with 4.1 yrs experience; slightly below the preferred experience range.
+CAND_0051630,61,0.651,Machine Learning Engineer with 6.0 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0017960,62,0.6443,Recommendation Systems Engineer with 7.7 yrs experience.
+CAND_0039383,63,0.6438,Applied ML Engineer with 7.1 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0089552,64,0.6403,Machine Learning Engineer with 6.0 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0094759,65,0.6398,Lead AI Engineer with 8.6 yrs experience.
+CAND_0030827,66,0.6398,Senior Data Scientist with 5.4 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0006557,67,0.6372,NLP Engineer with 7.9 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0037944,68,0.6307,Senior Data Scientist with 4.9 yrs experience; slightly below the preferred experience range.
+CAND_0010770,69,0.6295,Recommendation Systems Engineer with 15.2 yrs experience; experience exceeds the preferred range but closely aligns with the role.
+CAND_0020708,70,0.6206,Search Engineer with 4.2 yrs experience; slightly below the preferred experience range.
+CAND_0066376,71,0.6191,Applied ML Engineer with 5.7 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0074225,72,0.6162,Machine Learning Engineer with 4.3 yrs experience; 120-day notice period offset by strong technical alignment; slightly below the preferred experience range.
+CAND_0093331,73,0.616,NLP Engineer with 16.1 yrs experience; experience exceeds the preferred range but closely aligns with the role.
+CAND_0058575,74,0.6114,AI Engineer with 5.8 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0052682,75,0.6102,NLP Engineer with 6.6 yrs experience.
+CAND_0068811,76,0.601,Applied ML Engineer with 8.0 yrs experience.
+CAND_0036184,77,0.5955,Recommendation Systems Engineer with 6.0 yrs experience.
+CAND_0070485,78,0.5886,Search Engineer with 6.4 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0011162,79,0.5865,Recommendation Systems Engineer with 5.8 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0049896,80,0.5833,Search Engineer with 7.3 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0010685,81,0.5832,NLP Engineer with 6.7 yrs experience.
+CAND_0030348,82,0.5818,Machine Learning Engineer with 4.5 yrs experience; slightly below the preferred experience range.
+CAND_0052328,83,0.5813,Recommendation Systems Engineer with 6.5 yrs experience.
+CAND_0041568,84,0.567,Search Engineer with 5.2 yrs experience; 90-day notice period offset by strong technical alignment.
+CAND_0084819,85,0.5629,Search Engineer with 4.5 yrs experience; 120-day notice period offset by strong technical alignment; slightly below the preferred experience range.
+CAND_0016163,86,0.5628,Applied ML Engineer with 6.7 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0091909,87,0.5602,Machine Learning Engineer with 6.9 yrs experience.
+CAND_0060054,88,0.5592,AI Engineer with 6.4 yrs experience.
+CAND_0009691,89,0.5542,Applied ML Engineer with 6.2 yrs experience; 120-day notice period offset by strong technical alignment.
+CAND_0053591,90,0.553,AI Engineer with 5.3 yrs experience.
+CAND_0007411,91,0.5495,Senior Machine Learning Engineer with 8.0 yrs experience.
+CAND_0041610,92,0.5435,Recommendation Systems Engineer with 6.7 yrs experience.
+CAND_0093912,93,0.5424,Senior Data Scientist with 5.3 yrs experience.
+CAND_0011432,94,0.5385,Senior Data Scientist with 7.6 yrs experience.
+CAND_0039521,95,0.5353,Search Engineer with 3.0 yrs experience; slightly below the preferred experience range.
+CAND_0076251,96,0.5326,Search Engineer with 7.6 yrs experience.
+CAND_0039838,97,0.5308,Recommendation Systems Engineer with 4.9 yrs experience; 90-day notice period offset by strong technical alignment; slightly below the preferred experience range.
+CAND_0064326,98,0.5291,Search Engineer with 7.6 yrs experience.
+CAND_0075439,99,0.5241,Machine Learning Engineer with 4.3 yrs experience; slightly below the preferred experience range.
+CAND_0003977,100,0.524,Recommendation Systems Engineer with 4.6 yrs experience; slightly below the preferred experience range.
