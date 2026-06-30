@@ -2,113 +2,115 @@
 
 ## Overview
 
-This project was developed for the **Redrob Data & AI Challenge**. It presents an AI-powered candidate discovery system that ranks candidates using a combination of structured profile features, behavioral signals, and semantic similarity.
+This project was developed for the **Redrob Data & AI Challenge**.
 
-Unlike traditional keyword-based search, the system performs contextual matching between job descriptions and candidate profiles to identify the most relevant candidates and generate an explainable ranked shortlist.
+The objective is to build an intelligent candidate discovery system capable of ranking candidates beyond simple keyword matching by combining structured profile features, behavioral signals, and semantic similarity.
+
+The solution is designed to efficiently process large candidate datasets and generate an explainable ranked shortlist suitable for recruiter workflows.
 
 ---
 
 ## Problem Statement
 
-Recruiters often rely on keyword matching to search candidate profiles. This approach can overlook highly qualified candidates whose experience and skills are expressed differently.
+Traditional recruitment systems rely heavily on keyword matching, often overlooking qualified candidates whose experience is expressed differently.
 
-The objective of this project is to build an intelligent ranking system capable of:
+This project addresses that limitation by combining:
 
-- Understanding complex job descriptions
-- Identifying semantically relevant candidates
-- Incorporating behavioral and profile signals
-- Producing an accurate ranked shortlist with explainable reasoning
+- Feature-based candidate scoring
+- Semantic profile understanding
+- Behavioral signals
+- Explainable AI ranking
+
+to recommend the most relevant candidates for a given job description.
 
 ---
 
-## Solution Architecture
+# Solution Architecture
 
 ```
-                 Job Description
-                        │
-                        ▼
-           Job Requirement Extraction
-                        │
-                        ▼
-         Feature-Based Candidate Scoring
-                (100,000 Candidates)
-                        │
-                        ▼
-             Top Candidate Selection
-                        │
-                        ▼
-        Semantic Embedding Re-ranking
-        (BAAI/bge-small-en-v1.5)
-                        │
-                        ▼
-            Final Candidate Ranking
-                        │
-                        ▼
-                submission.csv
+                     Job Description
+                             │
+                             ▼
+                Job Description Parsing
+                             │
+                             ▼
+          Feature-Based Candidate Scoring
+               (100,000 Candidate Profiles)
+                             │
+                             ▼
+               Top Candidate Preselection
+                             │
+                             ▼
+        Semantic Embedding using BGE Model
+                             │
+                             ▼
+          Cosine Similarity Re-ranking
+                             │
+                             ▼
+             Final Weighted Candidate Rank
+                             │
+                             ▼
+                  submission.csv
 ```
 
 ---
 
-## Methodology
+# Methodology
 
-### 1. Job Description Processing
+The ranking system follows a two-stage retrieval architecture.
 
-The system extracts important technical and domain-specific requirements from the supplied job description, including:
+## Stage 1 – Feature-Based Retrieval
 
-- AI and Machine Learning technologies
-- Vector databases
-- Search and retrieval concepts
-- LLM-related skills
-- Soft skills
-
----
-
-### 2. Feature-Based Candidate Retrieval
-
-Each candidate profile is evaluated using structured features such as:
+Each candidate profile is evaluated using structured profile information including:
 
 - Technical skills
+- Current role
+- Career history
 - Years of experience
-- Current job title
-- Production AI experience
+- Production AI indicators
 - Behavioral signals
 
-Only the highest scoring candidates proceed to the semantic ranking stage.
+A weighted scoring function identifies the most relevant candidates while efficiently filtering the dataset.
 
 ---
 
-### 3. Semantic Re-ranking
+## Stage 2 – Semantic Re-ranking
 
-Candidate profiles are converted into semantic representations using:
+The shortlisted candidates are embedded using:
 
 **BAAI/bge-small-en-v1.5**
 
-Cosine similarity is computed between the job description embedding and candidate embeddings to estimate contextual relevance.
+The system generates semantic embeddings for both:
+
+- Job Description
+- Candidate Profile
+
+Cosine similarity is then used to estimate contextual relevance between the job requirements and each candidate profile.
 
 ---
 
-### 4. Final Ranking
+## Final Ranking
 
-The final ranking combines:
+The final candidate score combines:
 
 - Feature-based retrieval score
 - Semantic similarity score
 
-The top 100 candidates are exported together with explainable reasoning.
+The highest-ranked candidates are exported with explainable reasoning describing why each candidate was selected.
 
 ---
 
-## Features Used
+# Features Used
 
-### Candidate Features
+## Candidate Features
 
-- Current role
+- Current job title
 - Professional summary
-- Skills
+- Technical skills
 - Career history
 - Years of experience
 
-### Behavioral Signals
+## Behavioral Signals
 
 - Recruiter response rate
 - Interview completion rate
@@ -116,7 +118,7 @@ The top 100 candidates are exported together with explainable reasoning.
 - Open-to-work status
 - Notice period
 
-### Semantic Features
+## Semantic Features
 
 - Job description embeddings
 - Candidate profile embeddings
@@ -124,7 +126,7 @@ The top 100 candidates are exported together with explainable reasoning.
 
 ---
 
-## Technologies
+# Technologies
 
 - Python
 - Sentence Transformers
@@ -137,46 +139,61 @@ The top 100 candidates are exported together with explainable reasoning.
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```
-Candidate-Ranker/
+Redrob-AI-Candidate-Ranker/
 
-├── Redrob_AI_Ranker.ipynb
+├── Candidate_Ranker.ipynb
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
-├── outputs/
-│   └── submission.csv
-└── docs/
+│
+└── outputs/
+    └── submission.csv
 ```
 
 ---
 
-## How to Run
+# Installation
 
-### Install Dependencies
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Required Input Files
+---
 
-Place the following files in the project directory:
+# Required Input Files
 
-- candidates.jsonl
-- job_description.docx
+The notebook expects the following input files:
 
-### Run
+- `candidates.jsonl`
+- `job_description.docx`
 
-Execute the notebook:
+These files are provided as part of the challenge dataset and are **not included** in this repository.
+
+---
+
+# Running the Project
+
+Run the notebook:
 
 ```
-Redrob_AI_Ranker.ipynb
+Candidate_Ranker.ipynb
 ```
 
-The notebook generates:
+The notebook performs:
+
+1. Job description parsing
+2. Feature-based candidate scoring
+3. Candidate preselection
+4. Semantic embedding
+5. Final ranking
+6. Submission generation
+
+The final output is:
 
 ```
 submission.csv
@@ -184,43 +201,49 @@ submission.csv
 
 ---
 
-## Output
+# Output Format
 
-The generated submission file contains:
+The generated submission contains:
 
 | Column | Description |
 |---------|-------------|
 | candidate_id | Candidate identifier |
-| rank | Final ranking position |
-| score | Combined ranking score |
-| reasoning | Explanation of why the candidate was selected |
+| rank | Final ranking |
+| score | Final ranking score |
+| reasoning | Explainable recommendation |
 
 ---
 
-## Results
+# Performance
 
-The proposed system:
+The proposed pipeline:
 
-- Processes over 100,000 candidate profiles
-- Uses a two-stage retrieval pipeline for efficient ranking
+- Processes over **100,000 candidate profiles**
+- Uses efficient streaming to reduce memory usage
+- Applies two-stage retrieval for scalability
+- Produces explainable candidate recommendations
 - Performs semantic matching beyond keyword search
-- Incorporates behavioral signals into ranking
-- Produces explainable recommendations suitable for recruiter review
 
 ---
 
-## Future Improvements
+# Future Improvements
 
-Potential enhancements include:
+Potential future enhancements include:
 
 - Cross-Encoder re-ranking
-- Hybrid BM25 + semantic retrieval
-- Learning-to-Rank models
-- GPU acceleration
-- Automated hyperparameter tuning
+- Hybrid lexical + semantic retrieval
+- Learning-to-Rank optimization
+- Hyperparameter tuning
+- GPU acceleration for large-scale inference
 
 ---
 
-## Author
+# License
+
+This project is released under the MIT License.
+
+---
+
+# Author
 
 Developed for the **Redrob Data & AI Challenge**.
