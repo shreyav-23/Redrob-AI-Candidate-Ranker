@@ -1,0 +1,7 @@
+sentence-transformers
+python-docx
+numpy
+pandas
+scikit-learn
+tqdm
+rapidfuzz
