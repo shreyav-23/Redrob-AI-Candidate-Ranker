@@ -19,24 +19,19 @@ team_members:
 
 github_repo: "https://github.com/shreyav-23/Redrob-AI-Candidate-Ranker"
 
-sandbox_link: "https://colab.research.google.com/drive/1-a_cF5uMJv5VLE_WrJVC_2pqS54VSm6H?usp=sharing"
+sandbox_link: "https://colab.research.google.com/drive/1GY1MvLSG4j7MrUP4TqLBOH1sRcHir55J?usp=sharing"
 
-reproduce_command: >
-  Open Redrob_AI_Ranker.ipynb in Google Colab, upload
-  candidates.jsonl and job_description.docx, then run all cells.
-  The notebook generates outputs/P_for_Positive.csv.
+reproduce_command: "Open ranking.ipynb and run all cells to generate P_for_Positive.csv"
 
 # ============================================================================
 # Compute environment
 # ============================================================================
 
 compute:
-  platform: "Google Colab Free"
-  cpu_cores: 2
-  ram_gb: 12
+  platform: "Google Colab"
+  cpu: "Colab CPU runtime"
   python_version: "3.11"
-  os: "Ubuntu Linux"
-  uses_gpu_for_inference: false
+  gpu: false
   has_network_during_ranking: false
   pre_computation_required: false
   pre_computation_time_minutes: 0
@@ -47,29 +42,30 @@ compute:
 
 ai_tools_used:
   - "ChatGPT"
+  - "Gemini"
 
 ai_usage_summary: |
-  ChatGPT was used as a development assistant for brainstorming,
-  debugging Python code, refining the ranking pipeline,
-  improving documentation, and reviewing the implementation.
-  All engineering decisions, implementation, testing, and
-  final submission were completed by the participant.
+  Used ChatGPT for architecture discussion, feature engineering,
+  debugging, reasoning generation, and runtime optimization.
+  Used Gemini primarily for code cleanup and formatting.
+  The ranking pipeline, experimentation, implementation,
+  validation, and final design decisions were performed manually.
 
 # ============================================================================
 # Approach summary
 # ============================================================================
 
 methodology_summary: |
-  This project implements a two-stage AI candidate ranking pipeline.
-  Candidate profiles are first scored using structured features,
-  including technical skills, current role, years of experience,
-  production AI indicators, and behavioral signals to efficiently
-  retrieve the most relevant candidates from a large candidate pool.
-  The shortlisted candidates are then re-ranked using semantic
-  similarity computed with the BAAI/bge-small-en-v1.5 Sentence
-  Transformer model. The final score combines feature-based
-  retrieval with semantic relevance to generate an explainable
-  top-100 ranked shortlist.
+  Implemented a two-stage hybrid ranking pipeline. The first stage performs
+  fast candidate retrieval using weighted feature engineering based on
+  relevant AI skills, production ML experience, behavioral hiring signals,
+  AI-specific experience, title relevance, and consulting-career penalties.
+  The top candidates are then semantically re-ranked using the
+  BAAI/bge-small-en-v1.5 embedding model against a compact representation
+  of the job description. The final score combines normalized feature
+  scores with semantic similarity. Candidate-specific reasoning is generated
+  automatically for every selected candidate. The system is CPU-only,
+  deterministic, and designed to satisfy the competition runtime constraints.
 
 # ============================================================================
 # Declarations
