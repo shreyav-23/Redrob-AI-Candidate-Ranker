@@ -10,7 +10,7 @@ The objective is to build an intelligent candidate discovery system capable of r
 
 This repository contains our solution for the Redrob AI Talent Ranking Challenge.
 
-The objective is to rank the top 100 candidates from the provided candidate dataset for the released Senior AI Engineer job description.
+The objective is to rank the top 100 candidates from the provided candidate dataset for the released job description.
 
 Our approach uses a two-stage hybrid ranking pipeline that combines fast feature engineering with semantic similarity to efficiently identify the strongest candidates while satisfying the competition's CPU-only runtime constraints.
 
