@@ -18,8 +18,6 @@ Instead of relying only on keyword matching, the pipeline incorporates multiple 
 
 ---
 
----
-
 ## Output
 
 The ranking pipeline generates the final submission file:
@@ -40,6 +38,7 @@ Upload the following files to your Colab session:
 
 candidates.jsonl
 job_description.docx
+
 2. Open the notebook
 
 Open ranking.ipynb in Google Colab.
@@ -56,8 +55,6 @@ P_for_Positive.csv
 
 ---
 
----
-
 ### 4. Generate the submission file
 
 After running all notebook cells successfully, the final submission file will be created as:
@@ -65,8 +62,6 @@ After running all notebook cells successfully, the final submission file will be
 ```text id="i8wwuh"
 P_for_Positive.csv
 ```
-
----
 
 ## Notes
 
