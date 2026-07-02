@@ -21,7 +21,7 @@ github_repo: "https://github.com/shreyav-23/Redrob-AI-Candidate-Ranker"
 
 sandbox_link: "https://colab.research.google.com/drive/1GY1MvLSG4j7MrUP4TqLBOH1sRcHir55J?usp=sharing"
 
-reproduce_command: "Open ranking.ipynb and run all cells to generate P_for_Positive.csv"
+reproduce_command: "Open ranking.ipynb in Google Colab, upload candidates.jsonl and job_description.docx, and run all cells to generate P_for_Positive.csv."
 
 # ============================================================================
 # Compute environment
