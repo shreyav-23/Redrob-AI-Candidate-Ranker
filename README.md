@@ -33,18 +33,24 @@ P_for_Positive.csv
 This project is designed to be executed in Google Colab using the provided notebook.
 
 1. Upload the required input files
+
 Upload the following files to your Colab session:
+
 candidates.jsonl
 job_description.docx
 
 2. Open the notebook
+
 Open ranking.ipynb in Google Colab.
 
 3. Run all notebook cells in order
+
 Run the notebook from top to bottom. The notebook includes a dependency installation cell, so no separate environment setup is required outside the notebook.
 
 4. Generate the submission file
+
 After all cells have run successfully, the final submission file will be generated as:
+
 P_for_Positive.csv
 
 ---
