@@ -18,16 +18,6 @@ Instead of relying only on keyword matching, the pipeline incorporates multiple 
 
 ---
 
-## Output
-
-The ranking pipeline generates the final submission file:
-
-```text id="hkpib9"
-P_for_Positive.csv
-```
-
----
-
 ## Running the Project in Google Colab
 
 This project is designed to be executed in Google Colab using the provided notebook.
